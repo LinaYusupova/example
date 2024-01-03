@@ -1,29 +1,29 @@
 # Объекты
 ### Инициализация объекта
-    ``` let user = new Object();    // синтаксис "конструктор объекта"
-    let user = {}; ```
+    ` let user = new Object();    // синтаксис "конструктор объекта"
+    let user = {}; `
 ### Добавление свойства
-    ``` object.key = value ```
+    ` object.key = value `
 ### Удаление свойства 
-    ``` delete object.key ```
+    ` delete object.key `
 ### Виды свойств объекта
-    ``` let object = {
+    ` let object = {
         name: 'John',
         "likes birds": true,    // ключ из нескольких слов
         [fruit]: 5              // вычисляемые свойства, где let fruit = '...' или выражение
-    } ```
+    } `
 ### Доступ к значению свойства
-    ``` object.key
-    object['key'] ```
+    ` object.key
+    object['key'] `
 ### Cуществующие переменные, как значения для свойств с тем же именем
-    ``` {
+    ` {
         name: name,
         age                     // age: age
-    } ```
+    } `
 ### Проверка существования свойства
-    ``` 'key' in object             // свойство есть/нет ( true/false )
-    user.noSuchProperty         // === undefined свойства нет ```
+    ` 'key' in object             // свойство есть/нет ( true/false )
+    user.noSuchProperty         // === undefined свойства нет `
 ### Перебор свойства
-    ``` for (key in object) {
+    ` for (key in object) {
         // тело цикла выполняется для каждого свойства объекта
-    } ```
+    } `
