@@ -6,7 +6,7 @@
 ### Метод Object.getOwnPropertyDescriptor(object, property) 
 Позволяет получить полную информацию о свойстве, возвращает объект - дескриптор свойства.
 
-    ``` javascript
+    ``` 
     let user = {
         name: "John"
     };
@@ -23,7 +23,7 @@
 ### Метод Object.defineProperty(object, property, descriptor) 
 Позволяет изменить флаги.
 
-    ``` javascript
+    ``` 
     let user = {};
 
     Object.defineProperties(user, "name", { // если свойство одно Object.defineProperty
@@ -35,7 +35,7 @@
     ```
 Для клонирования объекта вместе с его флагами:
 
-    ``` javascript
+    ``` 
     let clone = Object.defineProperties({}, Object.getOwnPropertyDescriptors(obj));
     ```
 Методы, которые ограничивают ***доступ ко всему объекту***:
