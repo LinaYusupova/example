@@ -3,7 +3,9 @@
 * enumerable – если true, свойство перечисляется в циклах / циклы его игнорируют (Object.keys(user) не возвращаеты).
 * configurable – если true, свойство можно удалить, атрибуты можно изменять / этого делать нельзя, НО изменить значение можно (из false в true нельзя).
 > По умолчанию true
-### Метод Object.getOwnPropertyDescriptor(object, property) позволяет получить полную информацию о свойстве, возвращает объект - дескриптор свойства.
+### Метод Object.getOwnPropertyDescriptor(object, property) 
+Позволяет получить полную информацию о свойстве, возвращает объект - дескриптор свойства.
+
     ``` javascript
     let user = {
         name: "John"
@@ -18,7 +20,9 @@
     //     "configurable": true
     // }
     ```
-### Метод Object.defineProperty(object, property, descriptor) позволяет изменить флаги.
+### Метод Object.defineProperty(object, property, descriptor) 
+Позволяет изменить флаги.
+
     ``` javascript
     let user = {};
 
@@ -30,6 +34,7 @@
     });
     ```
 Для клонирования объекта вместе с его флагами:
+
     ``` javascript
     let clone = Object.defineProperties({}, Object.getOwnPropertyDescriptors(obj));
     ```
